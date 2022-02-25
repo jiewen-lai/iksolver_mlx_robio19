@@ -27,7 +27,25 @@ The interactive live script helps one to understand better how the code works. I
 - Compute the transformation matrix of a two-segment continuum robot based on the DH prameters (a virtual pseudo-rigid link model)
 - Clear
 - Based on the DH model, compute ans save the IO relationship between the configuration ($R^4$) and tip cartesian ($R^6$).
-- Train MLP, save the network locally as `ik_net.mat`
+- Train MLP
+
+```
+Calculation mode: MEX
+ 
+Training Feed-Forward Neural Network with TRAINLM.
+Epoch 0/5000, Time 0.508, Performance 15.7992/0, Gradient 57.1367/1e-07, Mu 0.001/10000000000, Validation Checks 0/10
+```
+```
+Epoch 1/5000, Time 13.5, Performance 7.9875/0, Gradient 55.9948/1e-07, Mu 0.0001/10000000000, Validation Checks 0/10
+Epoch 2/5000, Time 27.533, Performance 2.7576/0, Gradient 17.9319/1e-07, Mu 0.0001/10000000000, Validation Checks 0/10
+Epoch 3/5000, Time 40.413, Performance 1.8418/0, Gradient 6.068/1e-07, Mu 0.0001/10000000000, Validation Checks 0/10
+Epoch 4/5000, Time 51.652, Performance 1.2755/0, Gradient 3.5822/1e-07, Mu 0.0001/10000000000, Validation Checks 0/10
+...
+...
+Epoch 71/5000, Time 830.364, Performance 0.013127/0, Gradient 0.18144/1e-07, Mu 1e-05/10000000000, Validation Checks 10/10
+Training with TRAINLM completed: Validation stop.
+```
+- Save the network locally as `ik_net.mat`
 - Test an show error
 
 `testPerformance.mlx`:
@@ -37,7 +55,20 @@ The interactive live script helps one to understand better how the code works. I
 - Use the inverse as new input, and test it forwardly
 - Evaluate the error - you will see something like this (for example)
 
+<p align="left">
+  <img style="width: 300px" src="figHeart.png" />
+</p>
 
- ![img](/figHeart.png)
+
+`trainNetwork_DH_with_orientation.mlx` - similar to the `trainNetwork_DH.mlx` but with orientaiton.
+
+`test_circle_hear.mlx` - test file for `trainNetwork_DH_with_orientation.mlx`.
+
+`DH_para.mlx` - symbolic calculation.
+
+
+
+
+
 
 
