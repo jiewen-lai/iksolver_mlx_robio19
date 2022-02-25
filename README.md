@@ -1,5 +1,7 @@
 # 📚 Reference 
-
+********************
+Author： Jiewen Lai
+********************            
 This repo contains the matlab live script files (`.mlx`) that have been introduced in the following conference paper - 
 ```
 @inproceedings{lai2019learning,
@@ -10,7 +12,9 @@ This repo contains the matlab live script files (`.mlx`) that have been introduc
   year={2019},
 }
 ```
-The interactive live script helps one to understand better how the code works. It is only for verficaition/proof-of-concept. I am using matlab r2020a.
+The interactive live script helps one to understand better how the code works. It is only for verficaition/proof-of-concept. 
+
+I am using matlab r2020a.
 
 
 ## ✔️ What's it about?
@@ -70,10 +74,5 @@ Training with TRAINLM completed: Validation stop.
 `test_circle_hear.mlx` - test file for `trainNetwork_DH_with_orientation.mlx`.
 
 `DH_para.mlx` - symbolic calculation.
-
-
-
-
-
 
 
