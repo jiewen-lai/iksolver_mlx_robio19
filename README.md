@@ -2,7 +2,7 @@
 ********************
 Author： Jiewen Lai
 ********************            
-This repo contains the matlab live script files (`.mlx`) that have been introduced in the following conference paper - 
+This repo contains the Matlab live script files (`.mlx`) that have been introduced in the following conference paper - 
 ```
 @inproceedings{lai2019learning,
   title={A learning-based inverse kinematics solver for a multi-segment continuum robot in robot-independent mapping},
@@ -12,14 +12,13 @@ This repo contains the matlab live script files (`.mlx`) that have been introduc
   year={2019},
 }
 ```
-The interactive live script helps one to understand better how the code works. It is only for verficaition/proof-of-concept. 
+The interactive live script helps one to understand better how the code works. It is only for verification/proof of concept. 
 
-I am using matlab r2020a.
+I am using Matlab r2020a.
 
+## ✔️ What is it about?
 
-## ✔️ What's it about?
-
-- This repo presents a simplified model to represent a multi-segment continuum robot using virtual rigid links. Based on the model, its IK can be solved using a multilayer perceptron (MLP), a class of feedforward neural network (FNN). 
+- This repo presents a simplified model to represent a multi-segment continuum robot using virtual rigid links. Based on the model, its IK can be solved using a multilayer perceptron (MLP) - a class of feedforward neural network (FNN). 
 - The transformation between virtual joint space to task space is described using Denavit-Hartenberg (D-H) convention. 
 - Using 20,000 established training data for supervised learning, the MLP reaches a mean squared error of 0.022 for a dual-segment continuum robot. 
 - The trained MLP is then used to find the joints for different end-effector positions, and the results show a mean relative error of 2.90% can be on the robot configuration. 
@@ -28,9 +27,9 @@ I am using matlab r2020a.
 ## 👨‍💻 Try it yourself!
 
 `trainNetwork_DH.mlx`: 
-- Compute the transformation matrix of a two-segment continuum robot based on the DH prameters (a virtual pseudo-rigid link model)
+- Compute the transformation matrix of a two-segment continuum robot based on the DH parameters (a virtual pseudo-rigid link model)
 - Clear
-- Based on the DH model, compute ans save the IO relationship between the configuration ($R^4$) and tip cartesian ($R^6$).
+- Based on the DH model, compute and save the IO relationship between the configuration ($R^4$) and tip cartesian ($R^6$).
 - Train MLP
 
 ```
@@ -50,11 +49,11 @@ Epoch 71/5000, Time 830.364, Performance 0.013127/0, Gradient 0.18144/1e-07, Mu 
 Training with TRAINLM completed: Validation stop.
 ```
 - Save the network locally as `ik_net.mat`
-- Test an show error
+- Test and show error
 
 `testPerformance.mlx`:
 - load `ik_net.mat`
-- Use forward kinematics to compute a desired path
+- Use forward kinematics to compute the desired path
 - Put the desired path as an input to the trained network -> get inverse output
 - Use the inverse as new input, and test it forwardly
 - Evaluate the error - you will see something like this (for example)
