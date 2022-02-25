@@ -36,6 +36,8 @@ The interactive live script helps one to understand better how the code works. I
 - Put the desired path as an input to the trained network -> get inverse output
 - Use the inverse as new input, and test it forwardly
 - Evaluate the error - you will see something like this (for example)
+
+
  ![img](/figHeart.png)
 
 
