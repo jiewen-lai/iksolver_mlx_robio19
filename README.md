@@ -63,6 +63,10 @@ Training with TRAINLM completed: Validation stop.
   <img style="width: 300px" src="figHeart.png" />
 </p>
 
+<p align="left">
+  <img style="width: 150px" src="resultx.png" /><img style="width: 150px" src="resulty.png" /><img style="width: 150px" src="resultz.png" />
+</p>
+
 
 `trainNetwork_DH_with_orientation.mlx` - similar to the `trainNetwork_DH.mlx` but with orientaiton.
 
