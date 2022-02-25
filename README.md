@@ -64,7 +64,7 @@ Training with TRAINLM completed: Validation stop.
 </p>
 
 <p align="left">
-  <img style="width: 150px" src="resultx.png" /><img style="width: 150px" src="resulty.png" /><img style="width: 150px" src="resultz.png" />
+  <img style="width: 250px" src="resultx.png" /><img style="width: 250px" src="resulty.png" /><img style="width: 250px" src="resultz.png" />
 </p>
 
 
