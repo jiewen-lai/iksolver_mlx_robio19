@@ -10,7 +10,7 @@ This repo contains the matlab live script files (`.mlx`) that have been introduc
   year={2019},
 }
 ```
-The interactive live script helps one to understand better how the code works. It is only for verficaition/proof-of-concept.
+The interactive live script helps one to understand better how the code works. It is only for verficaition/proof-of-concept. I am using matlab r2020a.
 
 
 ## ✔️ What's it about?
@@ -61,6 +61,11 @@ Training with TRAINLM completed: Validation stop.
 
 
 `trainNetwork_DH_with_orientation.mlx` - similar to the `trainNetwork_DH.mlx` but with orientaiton.
+
+<p align="left">
+  <img style="width: 300px" src="fig2.png" /> &nbsp; <img style="width: 300px" src="fig3.png" />
+</p>
+
 
 `test_circle_hear.mlx` - test file for `trainNetwork_DH_with_orientation.mlx`.
 
